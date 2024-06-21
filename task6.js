@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/roman-to-integer/
 
-var romanToInt = function (s) {
+let romanToInt = function (s) {
     let dict = {
         I: 1,
         V: 5,
