@@ -16,7 +16,6 @@ let romanToInt = function (s) {
     let flag = true;
 
     s.split("").forEach((item, index, arr) => {
-        console.log(item)
         if (flag) {
             if (item == "I") {
                 if (arr[index + 1] == "V") {
@@ -51,7 +50,6 @@ let romanToInt = function (s) {
             } else {
                 num = dict[item]
             }
-            console.log(num)
             res += num;
         } else {
             flag = true;
