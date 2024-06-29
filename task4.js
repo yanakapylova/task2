@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/plus-one/
 
-var plusOne = function(digits) {
+let plusOne = function(digits) {
     let i = digits.length - 1
     function wrap() {
         digits[i] = digits[i] + 1

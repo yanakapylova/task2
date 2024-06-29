@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/roman-to-integer/
 
-var romanToInt = function (s) {
+let romanToInt = function (s) {
     let dict = {
         I: 1,
         V: 5,
@@ -16,7 +16,6 @@ var romanToInt = function (s) {
     let flag = true;
 
     s.split("").forEach((item, index, arr) => {
-        console.log(item)
         if (flag) {
             if (item == "I") {
                 if (arr[index + 1] == "V") {
@@ -51,7 +50,6 @@ var romanToInt = function (s) {
             } else {
                 num = dict[item]
             }
-            console.log(num)
             res += num;
         } else {
             flag = true;

@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/longest-common-prefix/
+// сложность алгоритма - O(a * b), где a - это кол-во элементов массива, а b - длина общего префикса 
 
-var longestCommonPrefix = function (strs) {
+let longestCommonPrefix = function (strs) {
   if (strs[0] == "") {
     return "";
   }
@@ -12,8 +13,8 @@ var longestCommonPrefix = function (strs) {
   let i = 0;
   let flag = true;
 
-  while (flag) {
-    strs.forEach((item) => {
+  while (flag) { // макимальное повторение - длина префикса
+    strs.forEach((item) => { // длина слов в массиве
       if (i != item.length) {
         if (strs[0][i] != item[i]) {
           flag = false;
